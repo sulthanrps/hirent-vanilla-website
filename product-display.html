@@ -4,19 +4,323 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="styles/sulthan-styling.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <title>Product Display</title>
 </head>
 <body>
     <header>
-        <h4>LOGO</h4>
-        <div>
-            <h4>Icon user</h4>
-            <h4>Sulthan</h4>
-
-            <p>|</p>
-
-            <h4>Icon Cart</h4>
+        <div class="container header-inner">
+            <a href="#">
+                <img src="assets/mountain_icon.png" alt="logo" class="logo" />
+            </a>
+            
+            <div class="header-actions">
+                <a href="#" class="user-profile">
+                    <i class="fa-solid fa-user" style="font-size: 16px;"></i>
+                    Sulthan
+                </a>
+                <a href="#" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping" style="font-size: 20px;"></i>
+                </a>
+            </div>
         </div>
     </header>
+
+    <div class="container">
+        <main class="main-layout">
+            
+            <!-- SIDEBAR FILTERS -->
+            <aside class="sidebar">
+                <div class="filter-section">
+                    <h3>Kategori</h3>
+                    <div class="filter-group">
+                        <label class="filter-label"><input type="checkbox"> Semua Barang</label>
+                        <label class="filter-label"><input type="checkbox"> Ransel & Carrier</label>
+                        <label class="filter-label"><input type="checkbox"> Tenda & Shelter</label>
+                        <label class="filter-label"><input type="checkbox"> Sepatu Gunung</label>
+                        <label class="filter-label"><input type="checkbox"> Pakaian & Jaket</label>
+                        <label class="filter-label"><input type="checkbox"> Alat Masak</label>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Merek</h3>
+                    <div class="filter-group">
+                        <label class="filter-label"><input type="checkbox"> The North Face</label>
+                        <label class="filter-label"><input type="checkbox"> Osprey</label>
+                        <label class="filter-label"><input type="checkbox"> Eiger</label>
+                        <label class="filter-label"><input type="checkbox"> Naturehike</label>
+                    </div>
+                </div>
+
+                <div class="filter-section">
+                    <h3>Harga Sewa / Hari</h3>
+                    <div class="filter-group">
+                        <label class="filter-label"><input type="checkbox"> Di bawah Rp 20.000</label>
+                        <label class="filter-label"><input type="checkbox"> Rp 20.000 - Rp 50.000</label>
+                        <label class="filter-label"><input type="checkbox"> Di atas Rp 50.000</label>
+                    </div>
+                </div>
+            </aside>
+
+            <!-- CONTENT AREA -->
+            <section class="content">
+
+                <!-- FILTER AREA -->
+                <div class="content-header">
+                    <h1>Perlengkapan Tersedia <span>(124)</span></h1>
+                    <div class="sort-by">
+                        Urutkan: 
+                        <div class="sort-container">
+                            <select>
+                                <option>Paling Populer</option>
+                                <option>Harga Terendah</option>
+                                <option>Harga Tertinggi</option>
+                                <option>Terbaru</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PRODUCT GRID (TOP ROW) -->
+                <div class="product-grid">
+                    <!-- Card 1 -->
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <span class="promo-badge">PROMO</span>
+                            <img src="assets/product-dummy-img.png" alt="Tent Image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">TENDA & SHELTER</div>
+                            <h3 class="product-title">Naturehike Cloud Up 2 Person Ultralight Tent</h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(112)</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">Rp 25.000 <span>/ hari</span></div>
+                                <button class="btn-sewa-outline">SEWA</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2 -->
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <img src="assets/product-dummy-img.png" alt="Tent Image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">TENDA & SHELTER</div>
+                            <h3 class="product-title">Naturehike Cloud Up 2 Person Ultralight Tent</h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(112)</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">Rp 25.000 <span>/ hari</span></div>
+                                <button class="btn-sewa-outline">SEWA</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3 -->
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <img src="assets/product-dummy-img.png" alt="Tent Image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">TENDA & SHELTER</div>
+                            <h3 class="product-title">Naturehike Cloud Up 2 Person Ultralight Tent</h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(112)</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">Rp 25.000 <span>/ hari</span></div>
+                                <button class="btn-sewa-outline">SEWA</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 4 -->
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <img src="assets/product-dummy-img.png" alt="Tent Image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">TENDA & SHELTER</div>
+                            <h3 class="product-title">Naturehike Cloud Up 2 Person Ultralight Tent</h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(112)</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">Rp 25.000 <span>/ hari</span></div>
+                                <button class="btn-sewa-outline">SEWA</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 5 -->
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <img src="assets/product-dummy-img.png" alt="Tent Image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">TENDA & SHELTER</div>
+                            <h3 class="product-title">Naturehike Cloud Up 2 Person Ultralight Tent</h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(112)</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">Rp 25.000 <span>/ hari</span></div>
+                                <button class="btn-sewa-outline">SEWA</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 6 -->
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <span class="promo-badge">PROMO</span>
+                            <img src="assets/product-dummy-img.png" alt="Tent Image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">TENDA & SHELTER</div>
+                            <h3 class="product-title">Naturehike Cloud Up 2 Person Ultralight Tent</h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(112)</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">Rp 25.000 <span>/ hari</span></div>
+                                <button class="btn-sewa-outline">SEWA</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- BANNER -->
+                <div class="banner">
+                    <img src="assets/star.svg" alt="star" class="banner-star">
+                    
+                    <div class="banner-left">
+                        <h2>Best Deal !</h2>
+                        <div class="banner-price">Rp. 250.000 / hari</div>
+                        <button class="btn-sewa-solid">SEWA</button>
+                    </div>
+
+                    <div class="banner-middle">
+                        <h3>Paket Bundling</h3>
+                        <ul class="bundle-list">
+                            <li>1. Hiking Backpack</li>
+                            <li>2. Mountain Shoes</li>
+                            <li>3. Anti Slippery Sandals</li>
+                            <li>4. Linen Comfy Trousers</li>
+                            <li>5. Windproof Jacket</li>
+                            <li>6. Tongkat, Senter, dll.</li>
+                        </ul>
+                    </div>
+
+                    <div class="banner-right">
+                        <img src="assets/bundle-img.png" alt="Bundle Image" class="banner-img">
+                    </div>
+                </div>
+
+                <!-- PRODUCT GRID (BOTTOM ROW) -->
+                <div class="product-grid">
+                    <!-- Card 7 -->
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <img src="assets/product-dummy-img.png" alt="Tent Image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">TENDA & SHELTER</div>
+                            <h3 class="product-title">Naturehike Cloud Up 2 Person Ultralight Tent</h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(112)</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">Rp 25.000 <span>/ hari</span></div>
+                                <button class="btn-sewa-outline">SEWA</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 8 -->
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <img src="assets/product-dummy-img.png" alt="Tent Image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">TENDA & SHELTER</div>
+                            <h3 class="product-title">Naturehike Cloud Up 2 Person Ultralight Tent</h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(112)</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">Rp 25.000 <span>/ hari</span></div>
+                                <button class="btn-sewa-outline">SEWA</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 9 -->
+                    <div class="product-card">
+                        <div class="product-img-wrap">
+                            <img src="assets/product-dummy-img.png" alt="Tent Image">
+                        </div>
+                        <div class="product-info">
+                            <div class="product-category">TENDA & SHELTER</div>
+                            <h3 class="product-title">Naturehike Cloud Up 2 Person Ultralight Tent</h3>
+                            <div class="product-rating">
+                                <span class="stars">★★★★★</span>
+                                <span class="rating-count">(112)</span>
+                            </div>
+                            <div class="product-footer">
+                                <div class="product-price">Rp 25.000 <span>/ hari</span></div>
+                                <button class="btn-sewa-outline">SEWA</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PAGINATION -->
+                <ul class="pagination">
+                    <li class="page-item"><a href="#" class="page-link"><i class="fa-solid fa-angle-left"></i></a></li>
+                    <li class="page-item active"><a href="#" class="page-link">1</a></li>
+                    <li class="page-item"><a href="#" class="page-link">2</a></li>
+                    <li class="page-item"><a href="#" class="page-link">3</a></li>
+                    <li class="page-item"><span class="page-link disabled">...</span></li>
+                    <li class="page-item"><a href="#" class="page-link"><i class="fa-solid fa-angle-right"></i></a></li>
+                </ul>
+
+            </section>
+        </main>
+    </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="container footer-inner">
+            <div class="footer-left">
+                Affordable hiking gear rental for every adventure.
+            </div>
+            
+            <div class="footer-socials">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter"></i></a>
+            </div>
+
+            <div class="footer-right">
+                All rights reserved © 2022 by 
+                <img src="assets/mountain_icon.png" alt="logo" class="footer-logo">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
