@@ -135,6 +135,17 @@ header {
     accent-color: var(--primary-color);
 }
 
+.apply-btn {
+    width: 100%;
+    background-color: var(--text-main);
+    padding: 12px;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-weight: bold;
+    letter-spacing: 10%;
+}
+
 /* === CONTENT AREA === */
 .content {
     /* flex-grow: 1; */
