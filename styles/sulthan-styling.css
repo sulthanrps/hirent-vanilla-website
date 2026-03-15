@@ -39,7 +39,7 @@ button {
 
 /* === LAYOUT === */
 .container {
-    max-width: 1220px;
+    width: 100%;
 }
 
 /* === HEADER === */
@@ -137,10 +137,11 @@ header {
 
 /* === CONTENT AREA === */
 .content {
-    flex-grow: 1;
-    min-width: 0; /* Prevents flex items from overflowing */
+    /* flex-grow: 1; */
+    min-width: 0; /*  Prevents flex items from overflowing */
     margin-top: 24px;
     margin-bottom: 60px;
+    padding-right: 40px;
 }
 
 .content-header {

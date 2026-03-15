@@ -19,10 +19,20 @@ body {
     color: var(--text-main);
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 .container {
     max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
+}
+
+.back-btn-to-pd:hover {
+    text-decoration: underline;
+    transition: 0.5s all;
 }
 
 /* === HEADER === */
