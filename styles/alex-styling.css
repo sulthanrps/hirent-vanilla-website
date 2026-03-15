@@ -5,6 +5,11 @@
     font-family:'Work Sans',sans-serif;
 }
 
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
 body{
     height:100vh;
 }
