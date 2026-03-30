@@ -3,11 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HIRENT</title>
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@400;600;800;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/dinda-styling.css">
-    <title>Hirent's Landing Page</title>
+    <link href="assets/logo.png" rel="icon">
 </head>
 <body>
-    <h1 class="title">Landing Page -> Dinda</h1>
-    <a href="login.html">Login</a>
+
+    <header class="header">
+        <div class="container header__content">
+            <a href="#" class="logo"><img src="assets/logo.png" alt="Logo"></a>
+            <nav class="nav">
+                <a href="login.html" class="nav__link"><img src="assets/icons/profile.png" alt=""> Log In</a>
+                <span class="nav__divider">|</span>
+                <a href="login.html" class="nav__link"><img src="assets/icons/cart.png" alt="Cart"></a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="container hero__grid">
+                <div class="hero__visual">
+                    <div class="hero__window hero__window--left">
+                        <img src="assets/hero.jpeg" alt="Hiking gear" class="hero__img">
+                    </div>
+                    <div class="hero__window hero__window--right">
+                        <img src="assets/hero.jpeg" alt="Hiking gear" class="hero__img">
+                    </div>
+                </div>
+                <div class="hero__text">
+                    <h1>Explore the<br><span class="highlight">Outdoors</span><br>with the Right Gear</h1>
+                    <button class="btn btn--primary shadow--light">RENT NOW</button>
+                </div>
+            </div>
+            <img src="assets/icons/Star.png" alt="" class="hero__star">
+        </section>
+
+        <section class="promo">
+            <div class="container promo__content">
+                <h2 class="promo__title">Most Rented Gear</h2>
+                <div class="promo__grid">
+                    <div class="promo__row">
+                        <div class="promo__box-info">
+                            <div class="promo__code">CODE : TIF</div>
+                            <button class="btn btn--primary shadow--white">RENT NOW</button>
+                        </div>
+                        <div class="promo__visual-small">
+                            <div class="promo__mask promo__mask--top">
+                                <img src="assets/section2.jpeg" alt="Gear">
+                            </div>
+                            <img src="assets/badge.png" alt="Discount" class="promo__badge">
+                        </div>
+                    </div>
+                    <div class="promo__row">
+                        <div class="promo__mask promo__mask--bottom">
+                            <img src="assets/section2.jpeg" alt="Wide Gear">
+                        </div>
+                    </div>
+                </div>
+                <div class="promo__watermark">
+                    <span class="promo__watermark-pct">50%</span>
+                    <span class="promo__watermark-txt">SALE</span>
+                </div>
+            </div>
+        </section>
+
+        <div class="marquee">
+            <div class="marquee__inner">
+                <span>Get Going! Sale ends in 30 mins ✦ </span>
+                <span>Get Going! Sale ends in 30 mins ✦ </span>
+                <span>Get Going! Sale ends in 30 mins ✦ </span>
+                <span>Get Going! Sale ends in 30 mins ✦ </span>
+            </div>
+        </div>
+
+        <section class="catalog">
+            <div class="container">
+                <h2 class="catalog__title">AVAILABLE FOR RENT</h2>
+                <div class="catalog__grid">
+                    <article class="product-card">
+                        <div class="product-card__mask shape-1"><img src="assets/jacket_windbraker.jpeg" alt="Jacket"></div>
+                        <div class="product-card__info">
+                            <div><h3>Jacket Windbreaker</h3><p>Rp20.000 / hari</p></div>
+                            <button class="btn-arrow"><img src="assets/icons/arrow.png" alt=""></button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__mask shape-2"><img src="assets/backpack.jpeg" alt="Backpack"></div>
+                        <div class="product-card__info">
+                            <div><h3>Carrier Backpack</h3><p>Rp20.000 / hari</p></div>
+                            <button class="btn-arrow"><img src="assets/icons/arrow.png" alt=""></button>
+                        </div>
+                    </article>
+                    <article class="product-card">
+                        <div class="product-card__mask shape-3"><img src="assets/sepatu.jpeg" alt="Shoes"></div>
+                        <div class="product-card__info">
+                            <div><h3>Hiking Shoes</h3><p>Rp20.000 / hari</p></div>
+                            <button class="btn-arrow"><img src="assets/icons/arrow.png" alt=""></button>
+                        </div>
+                    </article>
+                </div>
+                <button class="btn btn--primary shadow--light">EXPLORE MORE</button>
+            </div>
+            <img src="assets/icons/star2.png" alt="" class="catalog__star">
+        </section>
+
+        <main>
+        <section class="newsletter">
+            <div class="container">
+                <h2 class="newsletter__heading">Get Ready for Your Next Adventure</h2>
+                
+                <div class="newsletter__content">
+                    <div class="newsletter__text">
+                        <p>Dapatkan update gear terbaru,<br>tips hiking, dan promo sewa<br>langsung ke emailmu.</p>
+                    </div>
+                    
+                    <form class="newsletter__form">
+                        <label>Subscribe to us today!</label>
+                        <div class="newsletter__input-group">
+                            <input type="email" placeholder="Enter your email" required>
+                            <button type="submit" class="btn btn--primary shadow--white">KEEP ME IN TREND</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer__content">
+            <p class="footer__tagline">Affordable hiking gear rental for every adventure.</p>
+            
+            <div class="footer__socials">
+                <a href="#" aria-label="Facebook">
+                    <img src="assets/icons/facebook.png" alt="Facebook">
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <img src="assets/icons/instagram.png" alt="Instagram">
+                </a>
+                <a href="#" aria-label="Twitter">
+                    <img src="assets/icons/twitter.png" alt="Twitter">
+                </a>
+            </div>
+            
+            <div class="footer__copyright">
+                <span>All rights reserved &copy; 2022 by</span> 
+                <img src="assets/logo.png" alt="Company Logo" class="footer__logo">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
