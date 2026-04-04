@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/sulthan-styling.css">
+    <link href="https://fonts.googleapis.com/css2?family=Work+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Profile</title>
+</head>
+<body>
+    <header>
+        <div class="container header-inner">
+            <a href="#">
+                <img src="assets/mountain_icon.png" alt="logo" class="logo" />
+            </a>
+            
+            <div class="header-actions">
+                <a href="profile.html" class="user-profile">
+                    <i class="fa-solid fa-user" style="font-size: 16px;"></i>
+                    Sulthan
+                </a>
+                <a href="#" class="cart-icon">
+                    <i class="fa-solid fa-cart-shopping" style="font-size: 20px;"></i>
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <div class="profile-container">
+        <div class="left-section">
+            <nav class="breadcrumb container">
+                <a href="product-display.html" class="back-btn-to-pd">
+                    <span>Dashboard</span>
+                </a>
+                
+                > <span>Profile</span> > <span>Personal Information</span>
+            </nav>
+
+            <div class="img-section">
+                <img src="assets/profile/placeholder.svg" alt="placeholder img" class="pp-round">
+                <h3 style="font-size: 20px; font-weight: bold; margin-top: 8px;">Sulthan</h3>
+                <p style="font-size: 14px; font-weight: medium;">ID: HIKER123</p>
+            </div>
+
+            <div class="sidebar-element">
+                <ul>
+                    <li class="active-nav">
+                        <img src="assets/profile/info-pribadi.svg" alt="info-pribadi-icon" class="nav-icon">
+                        <a href="#">Personal Information</a>
+                    </li>
+                    <li class="nav-element">
+                        <img src="assets/profile/metode-pembayaran.svg" alt="payment-method-icon" class="nav-icon">
+                        <a href="#">Payment Method</a>
+                    </li>
+                    <li class="nav-element">
+                        <img src="assets/profile/riwayat-transaksi.svg" alt="transaction-history-icon" class="nav-icon">
+                        <a href="#">Transactions History</a>
+                    </li>
+                    <li class="nav-element">
+                        <img src="assets/profile/keluar.svg" alt="logout-icon" class="nav-icon">
+                        <a href="login.html">Logout</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="right-section">
+            <form action="process/profile-form-handler.php" class="profile-form" method="post" enctype="multipart/form-data">
+                <div class="img-section">
+                    <img src="assets/profile/placeholder.svg" alt="placeholder img" class="pp-round" id="profile-preview">
+                    <label for="profile-pic" style="cursor: pointer;">
+                        <img src="assets/profile/edit-picture.svg" alt="edit-img-icon" class="edit-img-icon">
+                    </label>
+
+                    <input type="file" id="profile-pic" name="profile-pic" accept=".jpg, .png" style="display: none;" onchange="previewImage(event)">
+                </div>  
+                <div class="input-group">
+                    <label for="name">Name</label>
+                    <input type="text" id="name" name="name" value="Sulthan">
+                </div>
+
+                <div class="input-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" value="Sulthan@ub.ac.id">
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" id="phone" name="phone" value="08123456789">
+                </div>
+
+                <div class="input-group">
+                    <label for="phone">Change Password</label>
+                    <input type="password" id="old-pwd" name="old-pwd" placeholder="Write your old password">
+                    <input type="password" id="new-pwd" name="new-pwd" placeholder="Write your new password">
+                    <input type="password" id="confirm-pwd" name="confirm-pwd" placeholder="Confirm your new password">
+                </div>
+
+                <button type="submit" class="save-btn">Save Changes</button>
+            </form>
+        </div>
+    </div>
+</body>
+<script>
+function previewImage(event) {
+    const reader = new FileReader();
+    reader.onload = function() {
+        // Mengganti gambar placeholder dengan foto yang baru dipilih
+        const output = document.getElementById('profile-preview');
+        output.src = reader.result;
+    }
+    // Hanya proses jika ada file yang dipilih
+    if (event.target.files[0]) {
+        reader.readAsDataURL(event.target.files[0]);
+    }
+}
+</script>
+</html>
